@@ -15,7 +15,9 @@ export default function ArticlePage() {
         if (article.id === id) {
           const { id, title, publishedDate, blurb, articleText} = article
           return (
+
             <div key={id} className='article-page-container'>
+              
               <div className='article-header'>
                 <h1>{title}</h1>
                 <h5>{publishedDate}</h5>
