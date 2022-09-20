@@ -1,0 +1,30 @@
+.article-page-container {
+
+    .article-header {
+        background-color: gray;
+        padding: 50px 400px;
+
+        h5 {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 10px 0px 20px 0px;
+        }
+    }
+
+    .article-content {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: 50px 400px;
+    }
+
+    h1, h5, p {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 300;
+    }
+
+}

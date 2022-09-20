@@ -1,0 +1,33 @@
+.article-listing-container {
+    border: 2px solid black;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    width: 80%;
+
+    .article-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .article-details h2 {
+        font-size: 32px;
+    }
+
+    .article-details h3 {
+        font-weight: 400;
+    }
+
+    .article-details h4 {
+        font-weight: 700;
+    }
+
+    .article-details h2, h3, p {
+        margin: 0;
+    }
+
+    img {
+        width: 300px;
+    }
+}
