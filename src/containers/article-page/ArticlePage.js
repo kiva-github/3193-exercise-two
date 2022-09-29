@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import { useParams } from 'react-router'
 
 // styles
@@ -9,7 +10,13 @@ import data from '../../data'
 export default function ArticlePage() {
   const { articleId } = useParams()
   const articleData = data.find((article) => article.id === articleId)
-  const { id, title, publishedDate, blurb, articleText, image} = articleData
+  const { id, title, blurb, articleText, image} = articleData
+
+  const date = useMemo(() => {
+    if(!articleData) return ''
+    const parsedDate = new Date(articleData.publishedDate)
+    return parsedDate.toDateString()
+    }, [articleData])
      
   return (
     <div key={id} className='article-page-container'>
@@ -20,7 +27,7 @@ export default function ArticlePage() {
         
         <div className='header-details'>
           <h1>{title}</h1>
-          <h5>{publishedDate.substring(0, 10)}</h5>
+          <h5>{date}</h5>
           <p>{blurb}</p>
         </div>
 
