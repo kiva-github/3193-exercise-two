@@ -10,12 +10,13 @@
         flex-direction: column;
         gap: 10px;
 
-        h2, h3, p {
+        h2, h3, h4, h5, p {
             margin: 0;
         }
 
         h2 {
-            font-size: 32px
+            font-size: 32px;
+            font-weight: 700;
         }
 
         h3 {
@@ -26,6 +27,11 @@
 
         h4 {
             font-weight: 700;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 400;
         }
     }
 

@@ -1,8 +1,23 @@
 .article-page-container {
 
     .article-header {
-        background-color: gray;
-        padding: 50px 400px;
+        position: relative;
+
+        .img-container {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            z-index: -10;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .header-details {
+            padding: 50px 400px;
+        }
 
         h5 {
             font-size: 18px;
@@ -24,7 +39,7 @@
 
     h1 {
         font-size: 48px;
-        font-weight: 300;
+        font-weight: 500;
     }
 
 }

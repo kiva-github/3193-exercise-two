@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 
 // pages
@@ -11,7 +11,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/articles' element={<ArticleListingPage />} />
-        <Route path='/articles/:id' element={<ArticlePage />} />
+        <Route path='/articles/:articleId' element={<ArticlePage />} />
+        <Route path="/" element={<Navigate replace to="/articles" />} />
       </Routes>
     </BrowserRouter>
   );

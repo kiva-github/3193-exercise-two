@@ -11,7 +11,7 @@ export default function ArticleListing({ article }) {
         <img src={image.url} alt={image.alt}/>
         <div className='article-details'>
           <h2>{title}</h2>
-          <h3>{publishedDate}</h3>
+          <h5>{publishedDate.substring(0, 10)}</h5>
           <p>{blurb}</p>
           <Link to={`${id}`}>
             <h4>Read More</h4>
